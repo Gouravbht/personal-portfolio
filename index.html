@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <title>Gourav Bhati - Web Developer</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/dist/image/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/dist/image/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/dist/image/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/dist/image/site.webmanifest" />
+  </head>
+  <body class="bg-primary">
+    <main class="py-10 px-5 md:px-10">
+      <!-- Navar -->
+      <section>
+        <nav
+          class="text-secondary flex flex-col md:flex-row justify-between w-full"
+        >
+          <!-- <div class="text-center md:text-left text-2xl w-full font-bold"> -->
+          <a href="/">
+            <h1
+              class="text-3xl font-bold text-center md:text-center w-full md:w-fit"
+            >
+              Gourav Bhati
+            </h1>
+          </a>
+          <!-- </div> -->
+
+          <div class="my-5 md:my-0">
+            <ul class="flex flex-row justify-between text-lg font-medium">
+              <li class="mr-5 hover:text-blue-400">
+                <a href="#skills">Skills</a>
+              </li>
+              <li class="mr-5 hover:text-blue-400">
+                <a href="#projects">Projects</a>
+              </li>
+              <li class="mr-5 hover:text-blue-400">
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+
+      <!-- About paragraph and image -->
+
+      <section
+        id="about"
+        class="h-full py-20 md:py-0 md:h-[90vh] flex flex-col md:flex-row justify-between md:items-center"
+      >
+        <div class="">
+          <h1 class="font-semibold text-3xl md:text-6xl text-white">
+            Hii I'm <span class="text-blue-400">Gourav</span> <br />
+            web developer and <br />
+            blockchain enthusiast
+          </h1>
+          <button
+            onclick="window.location.href='mailto:gouravb791@gmail.com';"
+            class="p-2 md:px-3 md:py-3 text-white my-3 bg-accent hover:bg-blue-800 hover:scale-[1.05] active:scale-[0.99] transition-all ease-in-out rounded-lg"
+          >
+            Let's Connect
+          </button>
+        </div>
+        <div class="md:my-0 my-10">
+          <img
+            src="/dist/image/Saly-19.png"
+            alt="illustrationimg"
+            class="w-full md:w-[550px]"
+          />
+        </div>
+      </section>
+      <!-- skills section -->
+      <section class="flex flex-col items-center" id="skills">
+        <h1 class="text-4xl text-blue-400 mb-10 text-center">Skills</h1>
+        <div class="text-center w-full md:w-[60%] text-white">
+          <p class="text-xl md:text-2xl">
+            I am a web developer, I have a solid understanding of HTML, CSS, and
+            Bootstrap, and I am currently learning JavaScript. In addition, I
+            have a good knowledge of C++. i am also learning blockchain and have
+            already started learning Solidity. I am excited about the
+            opportunities that lies ahead in the blockchain space.
+          </p>
+        </div>
+        <div class="flex flex-col gap-10 w-full md:w-1/2 my-10 text-white">
+          <div class="w-full bg-gray-800 text-white">
+            <div
+              class="bg-accent p-0.5 text-center text-lg font-medium leading-none text-primary-100"
+              style="width: 95%"
+            >
+              HTML 95%
+            </div>
+          </div>
+          <div class="w-full bg-gray-800">
+            <div
+              class="bg-accent p-0.5 text-center text-lg font-medium leading-none text-primary-100"
+              style="width: 90%"
+            >
+              CSS 90%
+            </div>
+          </div>
+          <div class="w-full bg-gray-800">
+            <div
+              class="bg-accent p-0.5 text-center text-lg font-medium leading-none text-primary-100"
+              style="width: 65%"
+            >
+              JAVASCRIPT 65%
+            </div>
+          </div>
+          <div class="w-full bg-gray-800">
+            <div
+              class="bg-accent p-0.5 text-center text-lg font-medium leading-none text-primary-100"
+              style="width: 75%"
+            >
+              TailwindCSS 75%
+            </div>
+          </div>
+          <div class="w-full bg-gray-800">
+            <div
+              class="bg-accent p-0.5 text-center text-lg font-medium leading-none text-primary-100"
+              style="width: 70%"
+            >
+              C++ 70%
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects section -->
+      <section class="py-32">
+        <h1
+          id="projects"
+          class="text-4xl text-blue-400 font-semibold text-center"
+        >
+          Projects
+        </h1>
+        <div
+          class="flex flex-col md:flex-row my-10 gap-20 justify-center items-center"
+        >
+          <div class="flex justify-center">
+            <a href="https://peerchat.vercel.app">
+              <div class="block max-w-sm rounded-lg bg-[#2b2a2a] shadow-lg">
+                <img
+                  class="rounded-t-lg h-48"
+                  src="dist/image/project-img/peerchat.png"
+                  alt=""
+                />
+
+                <div class="p-6">
+                  <h5
+                    class="mb-2 text-xl font-medium leading-tight text-blue-400"
+                  >
+                    Peerchat
+                  </h5>
+                  <p class="mb-4 text-base text-white">
+                    It's a blockchain-based, end-to-end encrypted web chat app
+                    that allows users to communicate securely and privately.
+                    Using cutting-edge cryptography and blockchain technology.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="flex justify-center">
+            <div class="block max-w-sm rounded-lg bg-[#2b2a2a]">
+              <a href="#">
+                <img
+                  class="rounded-t-lg h-48"
+                  src="/dist/image/project-img/conficure.png"
+                  alt=""
+                  width="100%"
+                />
+              </a>
+              <div class="p-6">
+                <h5
+                  class="mb-2 text-xl font-medium leading-tight text-blue-400"
+                >
+                  Conficure (In Progress)
+                </h5>
+                <p class="mb-4 text-base text-white">
+                  It's a blockchain-based confidential agreement portal that
+                  uses blockchain technology to securely store and manage
+                  confidential agreements, such as NDAs and other legal
+                  documents.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Section -->
+
+    <footer class="bg-accent flex flex-col justify-center items-center py-10">
+      <div id="contact">
+        <h1 class="text-3xl font-semibold text-white">Let's Contact</h1>
+      </div>
+      <div class="my-10 text-white text-center">
+        <p class="m-auto">
+          I am always open to working on web development and blockchain-based
+          projects. <br />
+          Feel free to reach out to me through my social media platforms.
+        </p>
+      </div>
+      <div>
+        <h1 class="text-2xl text-white text-center mb-5">Socials</h1>
+        <!-- Logos here -->
+        <div class="flex md:flex-row gap-10 text-white">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/gouravbht"
+          >
+            <img
+              src="/dist/image/social-icon/github.png"
+              alt=""
+              width="42"
+              height="42"
+              class=""
+            />
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/gourav-bhati/"
+          >
+            <img
+              src="/dist/image/social-icon/linkedin.png"
+              alt=""
+              width="42"
+              height="42"
+            />
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://twitter.com/gouravbht"
+          >
+            <img
+              src="/dist/image/social-icon/twitter.png"
+              alt=""
+              width="42"
+              height="42"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
