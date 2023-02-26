@@ -25,11 +25,36 @@
       href="/dist/image/favicon-16x16.png"
     />
     <link rel="manifest" href="/dist/image/site.webmanifest" />
+    <script src="./assets/vendor/preline/dist/preline.js"></script>
+
+    <!-- script -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-GKF1XLTDZE"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-GKF1XLTDZE");
+    </script>
   </head>
-  <body class="bg-primary">
+  <!-- Head End -->
+  <!-- Body Start -->
+  <body class="bg-primary relative">
+    <div
+      class="hidden md:absolute w-[400px] h-[400px] top-0 -left-32 blur-3xl bg-blue-600 opacity-50 rounded-full -z-20"
+    ></div>
+    <div
+      class="hidden md:absolute w-[550px] h-[550px] -bottom-20 -right-32 blur-3xl bg-blue-600 opacity-50 rounded-full -z-20"
+    ></div>
     <main class="py-10 px-5 md:px-10">
       <!-- Navar -->
-      <section>
+      <section class="relative">
         <nav
           class="text-secondary flex flex-col md:flex-row justify-between w-full"
         >
@@ -63,8 +88,14 @@
 
       <section
         id="about"
-        class="h-full py-20 md:py-0 md:h-[90vh] flex flex-col md:flex-row justify-between md:items-center"
+        class="relative h-full py-20 md:py-0 md:h-[90vh] flex flex-col md:flex-row justify-between md:items-center"
       >
+        <!-- <div
+          class="absolute w-[400px] h-[400px] top-0 -left-32 blur-3xl bg-blue-600 opacity-50 rounded-full -z-20"
+        ></div>
+        <div
+          class="absolute w-[550px] h-[550px] -bottom-20 -right-32 blur-3xl bg-blue-600 opacity-50 rounded-full -z-20"
+        ></div> -->
         <div class="">
           <h1 class="font-semibold text-3xl md:text-6xl text-white">
             Hii I'm <span class="text-blue-400">Gourav</span> <br />
@@ -98,45 +129,71 @@
             opportunities that lies ahead in the blockchain space.
           </p>
         </div>
-        <div class="flex flex-col gap-10 w-full md:w-1/2 my-10 text-white">
-          <div class="w-full bg-gray-800 text-white">
+        <!-- Skills Icon Section -->
+        <div class="flex flex-row flex-wrap justify-center gap-3 my-20">
+          <div class="skill-icon">
             <div
-              class="bg-accent p-0.5 text-center text-lg font-medium leading-none text-primary-100"
-              style="width: 95%"
+              class="py-3 px-4 rounded-md flex flex-col items-center justify-between hover:border border-blue-400 bg-[#1b1f36]"
             >
-              HTML 95%
+              <img
+                src="dist/image/skill-icons/html.png"
+                alt=""
+                width="62"
+                height="62"
+              />
+              <p class="text-white text-sm">HTML</p>
             </div>
           </div>
-          <div class="w-full bg-gray-800">
+          <div class="skill-icon">
             <div
-              class="bg-accent p-0.5 text-center text-lg font-medium leading-none text-primary-100"
-              style="width: 90%"
+              class="py-3 px-4 rounded-md flex flex-col items-center justify-between hover:border border-blue-400 bg-[#1b1f36]"
             >
-              CSS 90%
+              <img
+                src="dist/image/skill-icons/html.png"
+                alt=""
+                width="62"
+                height="62"
+              />
+              <p class="text-white text-sm">HTML</p>
             </div>
           </div>
-          <div class="w-full bg-gray-800">
+          <div class="skill-icon">
             <div
-              class="bg-accent p-0.5 text-center text-lg font-medium leading-none text-primary-100"
-              style="width: 65%"
+              class="py-3 px-4 rounded-md flex flex-col items-center justify-between hover:border border-blue-400 bg-[#151a37]"
             >
-              JAVASCRIPT 65%
+              <img
+                src="dist/image/skill-icons/html.png"
+                alt=""
+                width="62"
+                height="62"
+              />
+              <p class="text-white text-sm">HTML</p>
             </div>
           </div>
-          <div class="w-full bg-gray-800">
+          <div class="skill-icon">
             <div
-              class="bg-accent p-0.5 text-center text-lg font-medium leading-none text-primary-100"
-              style="width: 75%"
+              class="py-3 px-4 rounded-md flex flex-col items-center justify-between hover:border border-blue-400 bg-[#151a37]"
             >
-              TailwindCSS 75%
+              <img
+                src="dist/image/skill-icons/html.png"
+                alt=""
+                width="62"
+                height="62"
+              />
+              <p class="text-white text-sm">HTML</p>
             </div>
           </div>
-          <div class="w-full bg-gray-800">
+          <div class="skill-icon">
             <div
-              class="bg-accent p-0.5 text-center text-lg font-medium leading-none text-primary-100"
-              style="width: 70%"
+              class="py-3 px-4 rounded-md flex flex-col items-center justify-between hover:border border-blue-400 bg-[#151a37]"
             >
-              C++ 70%
+              <img
+                src="dist/image/skill-icons/html.png"
+                alt=""
+                width="62"
+                height="62"
+              />
+              <p class="text-white text-sm">HTML</p>
             </div>
           </div>
         </div>
@@ -262,5 +319,6 @@
         </div>
       </div>
     </footer>
+    <script src="dist/main.js"></script>
   </body>
 </html>
